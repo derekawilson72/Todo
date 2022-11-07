@@ -1,0 +1,16 @@
+
+
+<app-todo-item
+  *ngFor="let cc of todos"
+  [todo]="cc"
+  (delete)="deleteTodo($event)"
+>
+
+</app-todo-item>
+
+
+
+<h2> Add New Task</h2>
+<app-todo-form (newTodo)="addNewTodo($event)">
+</app-todo-form>
+

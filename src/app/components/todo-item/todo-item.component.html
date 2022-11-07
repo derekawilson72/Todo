@@ -1,0 +1,11 @@
+<div class="container">
+    <p>{{todo.task}}</p>
+    <div *ngIf="todo.complete">
+        Completed!
+    </div>
+    <div *ngIf="!todo.complete">
+        <button (click)="markComplete()"> MarkComplete </button>
+    </div>
+    <button (click)="deleteTodo()"> X </button>
+    
+</div>
